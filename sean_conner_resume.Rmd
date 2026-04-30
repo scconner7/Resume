@@ -67,8 +67,8 @@ create_skill_bar_data <-
 
 skill_dots_data <-
   create_skill_bar_data(5,
-                        c("R", "SQL", "Tableau", "HTML", "CSS", "Git", "Python"),
-                        c(5, 5, 4, 4, 4, 4, 3))
+                        c("SQL", "Python", "R", "Tableau", "Git", "Claude Code"),
+                        c(5, 4, 5, 5, 4, 3))
 
 
 
@@ -270,14 +270,39 @@ Event-History Analysis
 Machine Learning
 </div>
 
+<div class="flex-child">
+dbt
+</div>
+
+<div class="flex-child">
+dlt
+</div>
+
+<div class="flex-child">
+Dagster
+</div>
+
+<div class="flex-child">
+tSQLt
+</div>
+
+<div class="flex-child">
+querychat
+</div>
+
+<div class="flex-child">
+GitHub Copilot
 </div>
 
 
-Disclaimer {#disclaimer style="width: var(--sidebar-width); padding-left: var(--sidebar-horizontal-padding);"}
---------------------------------------------------------------------------------
-This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown).<br></br>
-Code available on my GitHub [**here**](https://github.com/scconner7/Pagedown-Resume).<br></br>
-Last updated on `r Sys.Date()`.
+</div>
+
+
+<!-- Disclaimer {#disclaimer style="width: var(--sidebar-width); padding-left: var(--sidebar-horizontal-padding);"} -->
+<!-- -------------------------------------------------------------------------------- -->
+<!-- This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown).<br></br> -->
+<!-- Code available on my GitHub [**here**](https://github.com/scconner7/Pagedown-Resume).<br></br> -->
+<!-- Last updated on `r Sys.Date()`. -->
 
 
 Main
@@ -285,12 +310,13 @@ Main
 
 Sean Conner {#title}
 --------------------------------------------------------------------------------
+**Location:** Diamondhead, MS (USA)
 
 
 Professional Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
 
-### Senior Solutions Engineer
+### Senior Analytics Engineer
 
 Green Mountain Technology
 
@@ -298,12 +324,30 @@ Remote full-time
 
 Present - Aug. 2020
 
-- Conduct *ad hoc* strategic analyses of parcel shipping networks, such as request for proposal (RFP) evaluations and network optimizations for multiple Fortune 100 companies.
-- Work daily with large, complex datasets to create automated report pipelines, parameterized analytics models, and business intelligence dashboards using combinations of SQL, R / RMarkdown, Shiny, Excel, and Tableau.
-- Summarized and presented *ad hoc*, weekly, and monthly analyses to audiences up to senior VP-level executives of Fortune 100 companies.
-- Develop and maintain two internal R packages, a SQL schema, and an R Shiny web app that empower account delivery teams to load and configure customer contracts as strategic modeling scenarios for standardized analytics models.
-- Led operations-wide roll-out of Git & GitLab with self-authored tutorial documents and live demos.
-- Organized weekly engineer alignment meetings to share methods and standardize work.
+- Architected an event-driven webhook pipeline with rigorous data quality checks to validate payload completeness and enforce strict alignment with partner specifications.
+- Engineered an end-to-end rate shop verification pipeline, transforming nested JSON into high-performance STAR schemas to map complex partner data to internal models.
+- Orchestrate production data pipelines using Dagster, integrating diverse operational sources to drive enterprise analytics and accurate revenue forecasting.
+- Championed enterprise adoption of dlt and dbt, maintaining ingestion frameworks for complex datasets including carrier service guides and contract pricing.
+- Developed a specialized SQL schema and R Shiny CRUD app to standardize and validate strategic pricing parameters, enabling account teams to maintain critical analytics inputs.
+- Core maintainer of the enterprise data warehouse and BI extracts, partnering across teams to ensure high availability and reliability for Tableau-driven insights.
+- Automated EIA fuel price ingestion workflows, dynamically calculating fuel surcharge percentages based on carrier indexes and zip-to-zone mappings.
+- Conducted strategic network optimizations and RFP evaluations for Fortune 100 clients, leveraging SQL and R to model large-scale parcel shipping data.
+- Built automated reporting pipelines and parameterized models using R/RMarkdown, Shiny, and Tableau to deliver weekly and monthly executive-level insights.
+- Led the operations-wide rollout of Git/GitLab, authoring technical documentation and conducting live training to standardize version control.
+- Organized weekly engineering alignment summits to drive methodology standardization and cross-team knowledge sharing.
+
+<!-- - Spearheaded a major partner integration by architecting an event-driven pipeline to ingest webhook data. Implemented rigorous data quality checks to validate payload completeness, enforce partner specifications, and ensure strict alignment with allowable enumerated values. -->
+<!-- - Designed a comprehensive rate shop verification pipeline spanning from initial webhook ingest through to end-product dashboards. Engineered foundational STAR schemas by parsing, flattening, and transforming nested JSON payloads in SQL, seamlessly translating complex fields between partner and internal enterprise data models. -->
+<!-- - Build, maintain, and orchestrate production-quality data asset pipelines using Dagster, connecting various operational sources to support enterprise analytics and accurate revenue forecasting. -->
+<!-- - Championed the adoption and implementation of data load tool (dlt) and data build tool (dbt). Maintain ingestion frameworks to acquire and validate complex datasets, including major parcel carrier service guides, published list rates, and customer contract pricing parameters. -->
+<!-- - Creater and lead maintainer / developer of a SQL schema optimized for loading customers' carrier contract and strategic what-if scenario pricing parameters in a standard location with built-in, robust data validations and an internal R Shiny CRUD app to facilitate account teams maintaining these critical inputs to internal analytics toolkit. -->
+<!-- - Serve as a core maintainer of the enterprise data warehouse and BI data extracts (integrating with visualization tools like Tableau). Partner directly with analytics and engineering teams to ensure downstream data availability and reliability. -->
+<!-- - Engineered automated workflows to ingest EIA published weekly fuel spot prices and dynamically calculate fuel surcharge percentages based on carrier-published indexes and zip-code-to-zone mappings. -->
+<!-- - Conducted *ad hoc* strategic analyses of parcel shipping networks, such as request for proposal (RFP) evaluations and network optimizations for multiple Fortune 100 companies. -->
+<!-- - Worked daily with large, complex datasets to create automated report pipelines, parameterized analytics models, and business intelligence dashboards using combinations of SQL, R / RMarkdown, Shiny, Excel, and Tableau. -->
+<!-- - Summarized and presented *ad hoc*, weekly, and monthly analyses to audiences up to senior VP-level executives of Fortune 100 companies. -->
+<!-- - Led operations-wide roll-out of Git & GitLab with self-authored tutorial documents and live demos. -->
+<!-- - Organized weekly engineer alignment meetings to share methods and standardize work. -->
 
 
 ### Research Associate
@@ -314,9 +358,7 @@ Starkville, MS
 
 Aug. 2020 - Aug. 2019
 
-- Conducted factor analysis and regression modeling of state agencies’ employee engagement and turnover intentions.
-- Served as principal investigator (PI) on three survey projects.
-- Served as Co-PI on a comprehensive program inventory report of education, health, and safety programs provided to K-12 children in MS for the state auditor's office.
+- Directed several high-impact research projects as PI/Co-PI, utilizing factor analysis and regression modeling to produce state-level program inventories and organizational reports.
 
 
 ### Graduate Research Assistant
@@ -327,33 +369,7 @@ Starkville, MS
 
 Aug. 2019 - July 2017
 
-- Created Shiny web applications to clearly visualize customizable reports requested by stakeholders.
-- Performed event-history / survival analyses to estimate jurisdictions’ policy adoption likelihoods.
-- Presented academic research projects and attended interactive workshops at conferences around the country.
-
-
-### Graduate Teaching Assistant
-
-MS State University - Communications Dept.
-
-Starkville, MS
-
-May 2017 - Aug 2016
-
--	Taught students to record television-quality video and audio and edit both with Adobe Premiere.
-
-
-### Technical Intern
-
-MS Legislative PEER Committee
-
-Jackson, MS
-
-April 2014 - Jan. 2014
-
--	Collected and cataloged program inventory data from county-regional and private prison facilities across the state for the Pew-MacArthur Results First Initiative, a comprehensive cost-benefit analysis of government programs across the country.
-- Provided legislative briefs and data visualizations to committee members.
-
+- Developed Shiny web applications and survival analysis models to deliver stakeholder insights, presenting technical findings at national conferences.
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
@@ -364,7 +380,7 @@ Ph.D - Public Policy and Administration
 
 Starkville, MS
 
-Present (Currently A.B.D. - anticipated graduation Fall 2025)
+Present (Currently A.B.D. - anticipated graduation 2027)
 
 GPA 4.00 / 4.00
 
@@ -400,8 +416,8 @@ Senior Solutions Engineer
 
 Remote full-time
 
-- Most Valuable Player (MVP) Award, nominated by peers and chosen by senior leadership as winner of 1 of only 2 such honors awarded company-wide each year (Winner in 2022 and nominated again 2023).
-- Discretionary Executive Leadership Bonus for Innovation recipient 2 consecutive years (2022 & 2023)
+- Most Valuable Player (MVP) Award, nominated by peers and chosen by senior leadership as winner of 1 of only 2 such honors awarded company-wide each year (Winner in 2022 and nominated again every year since 2023).
+- Discretionary Executive Leadership Bonus for Innovation recipient 3 consecutive years (2022-2024)
 
 
 ### MS State University
@@ -412,9 +428,8 @@ Starkville, MS
 
 - Outstanding Graduate Student (2018).
 - Student Representative for MPPA program (September 2017 – May 2018).
-- Graduate Student Adviser to Stennis-Montgomery Association, a student organization promoting civic engagement (2018).
 - The Honor Society of Phi Kappa Phi (2017-2018).
-- Best Graduate Student Presentation at MS Political Science Association Conference (2018).
+- Best Graduate Student Paper / Presentation at MS Political Science Association Conference (2018).
 
 
 ### University of MS
@@ -428,8 +443,3 @@ Oxford, MS
 - Pi Sigma Alpha, the Political Science Honors Society (2014).
 - Provost Scholar (2010-2014).
 - President for University of MS Model Senate (Fall 2013).
-
-
-
-
- 
