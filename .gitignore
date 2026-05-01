@@ -7,3 +7,11 @@
 .DS_Store
 /backburner/
 /images/
+
+# Internal authoring artifacts — never push
+/dev/
+
+# Render intermediates (pagedown / pandoc / Quarto)
+*.knit.md
+*_files/
+*_cache/

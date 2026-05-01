@@ -26,7 +26,7 @@ Contact Info {#contact}
 --------------------------------------------------------------------------------
 - <i class="fa fa-envelope"></i> scconner7@gmail.com
 - <i class="fa fa-phone"></i> +1 601-490-5086
-- <i class="fa fa-github"></i> [github.com/scconner7](https://github.com/scconner7)
+- <i class="fa fa-linkedin"></i> [linkedin.com/in/scconner7](https://www.linkedin.com/in/scconner7)
 
 
 <i class="fa fa-toolbox"></i> Languages and Tools {#languages}
@@ -67,8 +67,8 @@ create_skill_bar_data <-
 
 skill_dots_data <-
   create_skill_bar_data(5,
-                        c("SQL", "Python", "R", "Tableau", "Git", "Claude Code"),
-                        c(5, 4, 5, 5, 4, 3))
+                        c("SQL", "Python", "R", "Dagster", "Git", "Claude Code"),
+                        c(5, 5, 5, 4, 5, 4))
 
 
 
@@ -187,71 +187,7 @@ align-self: center;
 <div style="display: flex; flex-wrap: wrap; max-width: 750px; padding: 3px; white-space: nowrap; align-items: center"; justify-content: center>
 
 <div class="flex-child">
-Data Visualization
-</div>
-
-<div class="flex-child">
-Shiny
-</div>
-
-<div class="flex-child">
-Writing
-</div>
-
-<div class="flex-child">
-Statistical Analysis
-</div>
-
-<div class="flex-child">
-Regression Modeling
-</div>
-
-<div class="flex-child">
-Data Cleaning
-</div>
-
-<div class="flex-child">
-R Markdown
-</div>
-
-<div class="flex-child">
-Quarto
-</div>
-
-<div class="flex-child">
-R tidyverse
-</div>
-
-<div class="flex-child">
 Data Engineering
-</div>
-
-<div class="flex-child">
-Business Intelligence
-</div>
-
-<div class="flex-child">
-Survey Design
-</div>
-
-<div class="flex-child">
-Microsoft Office
-</div>
-
-<div class="flex-child">
-GitLab / GitHub
-</div>
-
-<div class="flex-child">
-Time-Series
-</div>
-
-<div class="flex-child">
-Atlassian Cloud
-</div>
-
-<div class="flex-child">
-R Package Dev
 </div>
 
 <div class="flex-child">
@@ -259,19 +195,7 @@ Data Warehousing
 </div>
 
 <div class="flex-child">
-Econometrics
-</div>
-
-<div class="flex-child">
-Event-History Analysis
-</div>
-
-<div class="flex-child">
-Machine Learning
-</div>
-
-<div class="flex-child">
-dbt
+ETL / ELT
 </div>
 
 <div class="flex-child">
@@ -279,7 +203,15 @@ dlt
 </div>
 
 <div class="flex-child">
+dbt
+</div>
+
+<div class="flex-child">
 Dagster
+</div>
+
+<div class="flex-child">
+T-SQL
 </div>
 
 <div class="flex-child">
@@ -287,11 +219,39 @@ tSQLt
 </div>
 
 <div class="flex-child">
-querychat
+Polars
 </div>
 
 <div class="flex-child">
-GitHub Copilot
+Shiny
+</div>
+
+<div class="flex-child">
+Quarto
+</div>
+
+<div class="flex-child">
+R Package Dev
+</div>
+
+<div class="flex-child">
+R tidyverse
+</div>
+
+<div class="flex-child">
+Machine Learning
+</div>
+
+<div class="flex-child">
+Data Visualization
+</div>
+
+<div class="flex-child">
+GitLab / GitHub
+</div>
+
+<div class="flex-child">
+querychat
 </div>
 
 
@@ -312,6 +272,8 @@ Sean Conner {#title}
 --------------------------------------------------------------------------------
 **Location:** Diamondhead, MS (USA)
 
+*Senior Analytics Engineer with six years productizing parcel-industry analytics — ships R packages, Python data pipelines, and reusable analytical frameworks at Fortune-100 scale. Public-policy researcher by training; engineer by trade.*
+
 
 Professional Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
@@ -322,19 +284,20 @@ Green Mountain Technology
 
 Remote full-time
 
-Present - Aug. 2020
+Aug. 2020 - Present
 
-- Architected an event-driven webhook pipeline with rigorous data quality checks to validate payload completeness and enforce strict alignment with partner specifications.
-- Engineered an end-to-end rate shop verification pipeline, transforming nested JSON into high-performance STAR schemas to map complex partner data to internal models.
-- Orchestrate production data pipelines using Dagster, integrating diverse operational sources to drive enterprise analytics and accurate revenue forecasting.
-- Championed enterprise adoption of dlt and dbt, maintaining ingestion frameworks for complex datasets including carrier service guides and contract pricing.
-- Developed a specialized SQL schema and R Shiny CRUD app to standardize and validate strategic pricing parameters, enabling account teams to maintain critical analytics inputs.
-- Core maintainer of the enterprise data warehouse and BI extracts, partnering across teams to ensure high availability and reliability for Tableau-driven insights.
-- Automated EIA fuel price ingestion workflows, dynamically calculating fuel surcharge percentages based on carrier indexes and zip-to-zone mappings.
-- Conducted strategic network optimizations and RFP evaluations for Fortune 100 clients, leveraging SQL and R to model large-scale parcel shipping data.
-- Built automated reporting pipelines and parameterized models using R/RMarkdown, Shiny, and Tableau to deliver weekly and monthly executive-level insights.
-- Led the operations-wide rollout of Git/GitLab, authoring technical documentation and conducting live training to standardize version control.
-- Organized weekly engineering alignment summits to drive methodology standardization and cross-team knowledge sharing.
+*Promoted: Solutions Engineer (2020) → Solutions Engineer II (2022) → Senior Analytics Engineer (2025).*
+
+- Author and maintain two production R packages — a Shiny pricing-input application and a shared utility library — together comprising 100+ exported functions and 30+ Shiny modules powering rate management and analytics across the customer portfolio.
+- Engineered a reusable package-consolidation analysis framework deployed across multiple Fortune-100 engagements; surfaces multi-million-dollar shipper savings opportunities by modeling tens of millions of package-level shipments against contractual rates with custom dim-weight, fuel, and bundling logic.
+- Lead RFP and carrier-bid evaluations for Fortune-100 clients; built modular SQL frameworks modeling 100M+ package-level scenarios with custom surcharge, fuel, and incentive-tier logic to deliver negotiation-ready rate-card summaries.
+- Designed and own a SQL schema for managing customer contract pricing parameters, with triggers, dynamic views, insert-routing, and validation UDFs enforcing data quality at write time.
+- Authored a tSQLt unit-test suite (hundreds of tests) covering charge derivation and rating logic across the carrier-implementation matrix; protects nightly DW refreshes from regression.
+- Engineered an event-driven webhook ingestion pipeline with payload-quality validation; transformed nested JSON into STAR-schema fact and dimension tables powering rate-shop verification.
+- Built a natural-language SQL interface over the enterprise portfolio's shipping-charges data using Posit's querychat (Python / Shiny + Ibis); engineered a domain-grounded system prompt and structured data dictionary that lets non-technical stakeholders query the warehouse in plain English.
+- Authored a small library of production Claude Code skills automating customer-contract parsing-and-loading (PDF / Excel / CSV → schema-aware SQL inserts), collapsing a multi-hour manual workflow to minutes.
+- Architected a dlt → dbt → Dagster ELT platform spanning 100+ models and dozens of Python extraction assets; orchestrates daily refresh of customer-warehouse data feeding downstream analytics, forecasting, and BI extracts.
+- Led operations-wide Git/GitLab rollout — authored canonical onboarding documentation, ran live training, and established branching and merge-request conventions adopted across analytics.
 
 <!-- - Spearheaded a major partner integration by architecting an event-driven pipeline to ingest webhook data. Implemented rigorous data quality checks to validate payload completeness, enforce partner specifications, and ensure strict alignment with allowable enumerated values. -->
 <!-- - Designed a comprehensive rate shop verification pipeline spanning from initial webhook ingest through to end-product dashboards. Engineered foundational STAR schemas by parsing, flattening, and transforming nested JSON payloads in SQL, seamlessly translating complex fields between partner and internal enterprise data models. -->
@@ -350,37 +313,27 @@ Present - Aug. 2020
 <!-- - Organized weekly engineer alignment meetings to share methods and standardize work. -->
 
 
-### Research Associate
+### Research Associate / Graduate Research Assistant
 
 MS State University - Stennis Institute of Government
 
 Starkville, MS
 
-Aug. 2020 - Aug. 2019
+July 2017 - Aug. 2020
 
-- Directed several high-impact research projects as PI/Co-PI, utilizing factor analysis and regression modeling to produce state-level program inventories and organizational reports.
-
-
-### Graduate Research Assistant
-
-MS State University - Stennis Institute of Government
-
-Starkville, MS
-
-Aug. 2019 - July 2017
-
-- Developed Shiny web applications and survival analysis models to deliver stakeholder insights, presenting technical findings at national conferences.
+- Directed multiple research projects as PI/Co-PI, applying factor analysis and regression modeling to produce state-level program inventories and organizational reports.
+- Built Shiny web applications and survival / event-history models to deliver stakeholder insights; presented technical findings at national conferences.
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
 ### MS State University
 
-Ph.D - Public Policy and Administration
+Ph.D., Public Policy and Administration (A.B.D.)
 
 Starkville, MS
 
-Present (Currently A.B.D. - anticipated graduation 2027)
+Anticipated 2027
 
 GPA 4.00 / 4.00
 
@@ -391,7 +344,7 @@ Master of Public Policy and Administration (MPPA)
 
 Starkville, MS
 
-Aug. 2018 - Aug. 2016
+Aug. 2016 - Aug. 2018
 
 GPA 4.00 / 4.00
 
@@ -402,7 +355,7 @@ Bachelor of Arts in Political Science
 
 Oxford, MS
 
-Aug. 2014 - Aug. 2010
+Aug. 2010 - Aug. 2014
 
 GPA 3.34 / 4.00
 
@@ -412,12 +365,12 @@ Leadership & Awards {data-icon=medal data-concise=true}
 
 ### Green Mountain Technology
 
-Senior Solutions Engineer
+Senior Analytics Engineer
 
 Remote full-time
 
-- Most Valuable Player (MVP) Award, nominated by peers and chosen by senior leadership as winner of 1 of only 2 such honors awarded company-wide each year (Winner in 2022 and nominated again every year since 2023).
-- Discretionary Executive Leadership Bonus for Innovation recipient 3 consecutive years (2022-2024)
+- Most Valuable Player (MVP) Award — peer-nominated, leadership-selected; one of only two awarded company-wide annually. Recipient in 2022; nominated every year since.
+- Discretionary Executive Leadership Bonus for Innovation — recipient three consecutive years (2022–2024).
 
 
 ### MS State University
@@ -438,8 +391,5 @@ Student
 
 Oxford, MS
 
-- Dean’s List (four semesters).
-- Representative for University of MS at the National Model United Nations in NYC (2010).
-- Pi Sigma Alpha, the Political Science Honors Society (2014).
-- Provost Scholar (2010-2014).
-- President for University of MS Model Senate (Fall 2013).
+- Dean's List (four semesters); Provost Scholar (2010–2014); Pi Sigma Alpha Honors Society (2014).
+- President of UM Model Senate (Fall 2013); university delegate to National Model United Nations, NYC (2010).
